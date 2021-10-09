@@ -1,0 +1,118 @@
+
+
+.container-main
+{
+    grid-area: container-main;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 5rem;
+    column-gap: 3rem;
+    grid-template-areas: 
+    "carouselB carouselB carouselB carouselB"
+    "presentacion presentacion presentacion presentacion"
+    "video-tendencia video-tendencia video-tendencia video-tendencia"
+    
+    ;
+            .carouselB
+        {
+            grid-area: carouselB;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            width: 60rem;
+            height: auto;
+        }
+            .presentacion
+        {
+                grid-area: presentacion;
+                grid-column-start: 2;
+                grid-column-end: 4;
+                grid-row-start: 3;
+                grid-row-end: 4;
+                display: flex;
+                flex-direction: row;
+                justify-self: center;
+                align-self: center;
+                    .img-bio img
+                    {
+                        margin: 3rem ;
+                        width: 30rem;
+                        height: auto;
+                    }
+                    .text-bio
+                        {
+                            justify-content: center;
+                            align-content: center;
+                            align-self: center; 
+                            font-family: 'Nunito Sans', sans-serif;
+                            font-weight: 400;
+                            font-size: 1rem;
+                            line-height: 1.6;
+                            width: 30rem; 
+                            height: fit-content;
+                            padding: 2rem;
+                            margin: .5rem;
+                            text-align: center;
+                            
+                        }
+        }
+                    .video-tendencia
+                        {
+                            grid-area: video-tendencia;
+                            grid-column-start: 2;
+                            grid-column-end: 4;
+                            grid-row-start: 2;
+                            grid-row-end: 3;
+                            display: flex;
+                            flex-direction: row;
+                            justify-self: center;
+                            align-self: center; 
+                            .video
+                                {   
+                                    padding: 4rem;  
+                                    
+                                }
+                        }
+                        .texto-tendencia
+                        {
+                            grid-column-start: 2;
+                            grid-column-end: 4;
+                            grid-row-start: 3;
+                            grid-row-end: 4;
+                            align-self: center;
+                            .video-texto
+                            {
+                                justify-items: center;
+                                align-items: center; 
+                                p
+                                {
+                                    font-family: 'Noto Sans TC', sans-serif;
+                                    font-size: 1.2rem;
+                                    line-height: 1.6;   
+                                }  
+                            } 
+                            p
+                            {
+                                margin-top: 1rem;
+                                font-family: 'Noto Sans TC', sans-serif;
+                                font-size: 1.2rem;
+                                line-height: 1.6;  
+                                
+                            }
+                            h3
+                            {
+                                margin-top: 1rem;
+                                font-family: 'Noto Sans TC', sans-serif;
+                                font-size: 1.6rem;
+                                line-height: .6;  
+                                margin-bottom: 2.5rem;
+                                
+                            }
+                        }
+}
+
+
+
+
