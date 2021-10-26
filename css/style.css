@@ -11,5 +11,229 @@
 }
 
 /* Header */
+.contenedor-nav {
+  grid-area: contenedor-nav;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-nav .contenedor-nav__header-imagen {
+  align-content: center;
+  justify-content: center;
+}
+.contenedor-nav .contenedor-nav__header-text a {
+  text-decoration: none;
+  color: black;
+}
+.contenedor-nav .contenedor-nav__header-text a:hover {
+  color: black;
+}
+.contenedor-nav .contenedor-nav__header-text a h1 {
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.contenedor-nav .contenedor-nav__header-text a h2 {
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.contenedor-nav .contenedor-nav__header-text .contenedor-nav .contenedor-nav__header-text__header-nav {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-nav .contenedor-nav__header-text .contenedor-nav .contenedor-nav__header-text__header-nav .redes-nav ul li {
+  display: inline-block;
+  margin: 0 0.3rem;
+}
+.contenedor-nav .contenedor-nav__header-text .contenedor-nav .contenedor-nav__header-text__header-nav .redes-nav ul li img {
+  width: 3rem;
+  height: auto;
+}
+.contenedor-nav .contenedor-nav__header-text .contenedor-nav .contenedor-nav__header-text__header-nav .redes-nav ul li:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+.contenedor-nav .contenedor-nav__header-text .contenedor-nav .contenedor-nav__header-text__nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.contenedor-nav .contenedor-nav__header-text .contenedor-nav .contenedor-nav__header-text__nav-menu ul li {
+  list-style: none;
+  padding: 0 0.8rem;
+}
+.contenedor-nav .contenedor-nav__header-text .contenedor-nav .contenedor-nav__header-text__nav-menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1.2rem;
+}
+.contenedor-nav .contenedor-nav__header-text .contenedor-nav .contenedor-nav__header-text__nav-menu ul li:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.container-main {
+  grid-area: container-main;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 5rem;
+  column-gap: 3rem;
+  grid-template-areas: "carouselB carouselB carouselB carouselB" "presentacion presentacion presentacion presentacion" "video-tendencia video-tendencia video-tendencia video-tendencia";
+}
+.container-main .container-main__carouselB {
+  grid-area: carouselB;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 60rem;
+  height: auto;
+}
+.container-main .container-main__presentacion {
+  grid-area: presentacion;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-self: center;
+  /* cuando ya estoy dentro de una clase y otra y dentro hay otra como se sigue? */
+}
+.container-main .container-main__presentacion .img-bio img {
+  margin: 3rem;
+  width: 30rem;
+  height: auto;
+}
+.container-main .container-main__presentacion .text-bio {
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  width: 30rem;
+  height: fit-content;
+  padding: 2rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+.container-main .container-main__video-tendencia {
+  grid-area: video-tendencia;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-self: center;
+}
+.container-main .container-main__video-tendencia .texto-tendencia {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  align-self: center;
+}
+.container-main .container-main__video-tendencia .texto-tendencia .video-texto {
+  justify-items: center;
+  align-items: center;
+}
+.container-main .container-main__video-tendencia .texto-tendencia .video-texto h3 {
+  margin-top: 1rem;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1.6rem;
+  line-height: 0.6;
+  margin-bottom: 2.5rem;
+}
+.container-main .container-main__video-tendencia .texto-tendencia .video-texto p {
+  margin-top: 1rem;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.container-main .container-main__video-tendencia .video {
+  padding: 4rem;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  grid-area: footer;
+  justify-self: center;
+  align-self: center;
+  padding-bottom: 3rem;
+  background: #7aa77a;
+  display: flex;
+  justify-content: center;
+}
+.footer .footer__footer-texto a {
+  text-decoration: none;
+  color: black;
+}
+.footer .footer__footer-texto a h1 {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.footer .footer__footer-texto a h2 {
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.footer .footer__footer-texto a:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+.footer .footer__redes {
+  display: flex;
+  height: 5vh;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.footer .footer__redes ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.footer .footer__redes ul li:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+.footer .footer__redes img {
+  width: 3rem;
+  height: auto;
+}
+.footer .footer__footer-links {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+.footer .footer__footer-links a {
+  text-decoration: none;
+  color: black;
+}
+.footer .footer__footer-contacto:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+.footer .footer__footer-recetas:hover {
+  transform: translateY(-5px) scale(1.05);
+}
 
 /*# sourceMappingURL=style.css.map */

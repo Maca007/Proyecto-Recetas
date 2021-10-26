@@ -1,97 +1,80 @@
-.container-index
-{
-    display: grid;
-    height: 100vh;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 5rem;
-    column-gap: 3rem;
-    grid-template-areas: 
-    "contenedor-nav contenedor-nav contenedor-nav contenedor-nav"
-    "container-main container-main container-main container-main"
-    "footer footer footer footer"
-    ;
-    .contenedor-nav{
+.contenedor-nav {
     grid-area: contenedor-nav;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;     
-    
-    .header-text a{
-        text-decoration: none;
-        color: black;
-            a:hover{
-            color: black;
+    align-items: center; 
+    & &__header-imagen {
+        align-content: center;
+        justify-content: center;
+    }    
+    & &__header-text {
+        a {
+          text-decoration: none;
+          color: black;
+            &:hover {
+                color: black;
             }
-    }
-    .contenedor-nav .header-text h1 {
-    text-align: center;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 400; 
-        h2{
-        text-align: center;
-        font-family: 'Noto Sans TC', sans-serif;
-        font-size: 1.5rem;
-        font-weight: 400;
-        padding-bottom: 1rem;    
+        h1 {
+            text-align: center;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400; 
+           }
+        h2 {
+            text-align: center;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding-bottom: 1rem;    
             } 
-    }
-    .header-nav
-    {
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-        .nav-menu ul
+        }
+    & &__header-nav {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        //aca no se como hacer para conectarlos y no se si esta bien 
+        .redes-nav ul li
         {
+            display: inline-block;
+            margin: 0 .3rem;     
+            img {
+                width: 3rem;
+                height: auto;
+            }
+            &:hover {
+                    transform: translateY(-5px) scale(1.05);
+            }
+        } 
+    }   
+    & &__nav-menu {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             margin: 1rem;
-            ul li
-                {
+            ul li {
                     list-style: none;
                     padding: 0 .8rem;
-
-                    a
-                    {
+                    a {
                         text-decoration: none;
                         color: black;
                         font-family: 'Noto Sans TC', sans-serif;
                         font-size: 1.2rem;
                         
                     }
-                    li:hover
-                        {
+                    &:hover {
                             transform: translateY(-5px) scale(1.05);
-                            
-                        }
-                }
-            .redes-nav ul li
-                {
-                    display: inline-block;
-                    margin: 0 .3rem;     
-                    li:hover
-                        {
-                            transform: translateY(-5px) scale(1.05);
-                        }
-
-                }
-                img
-                    {
-                        width: 3rem;
-                        height: auto;
-                    }
+                            }
+                  }
+           
 
            
-        }
+    }
+}
 }
     
-}  
-}
 
 
 

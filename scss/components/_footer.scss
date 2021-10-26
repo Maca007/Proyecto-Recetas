@@ -6,84 +6,73 @@
     justify-self: center;
     align-self: center;
     padding-bottom: 3rem; 
-    background: rgb(107, 179, 107) ;
+    background: rgb(122, 167, 122) ;
     display: flex;
     justify-content: center;
-    .redes
-{
-    display: flex;
-    height: 5vh;
-    justify-content:center;
-    margin-top: 2rem;
-        ul li
-    {
-        display: inline-block;
-        margin: 0 5px;
-
-        li:hover
-        {
+    & &__footer-texto {
+        a {
+            text-decoration: none;
+            color: black;
+        h1 {
+                margin-top: 2rem;
+                text-align: center;
+                font-family: 'Noto Sans TC', sans-serif;
+                font-size: 2.5rem;
+                font-weight: 400;
+        }
+        h2 {
+            text-align: center;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding-bottom: 1rem; 
+        }
+        &:hover {
             transform: translateY(-5px) scale(1.05);
         }
-
+        }  
     }
-            img
-        {
+    & &__redes {
+
+            display: flex;
+            height: 5vh;
+            justify-content:center;
+            margin-top: 2rem;
+        ul {
+        li {
+            display: inline-block;
+            margin: 0 5px;
+        &:hover {
+            transform: translateY(-5px) scale(1.05);
+        }
+        }
+        }
+        img {
             width: 3rem;
             height: auto;
         }
-}
-.footer-texto h1 
-{
-    margin-top: 2rem;
-    text-align: center;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 400;
-
-    h2 
-    {
-        text-align: center;
-    
-        font-family: 'Noto Sans TC', sans-serif;
-        font-size: 1.5rem;
-        font-weight: 400;
-        padding-bottom: 1rem; 
     }
-    a
-    {
+    & &__footer-links {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-align: left;
+            margin-top: 2rem;
+            margin-left: 3rem;
+        a {
         text-decoration: none;
         color: black;
-    }  
-    :hover
-    {
-        transform: translateY(-5px) scale(1.05);
+        }   
     }
-    
-}
-.footer-links
-{
-    font-family: 'Noto Sans TC', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: left;
-    margin-top: 2rem;
-    margin-left: 3rem;
-
-    a
-    {
-        text-decoration: none;
-        color: black;
+    & &__footer-contacto {
+    &:hover {  
+    transform: translateY(-5px) scale(1.05);
     }
-   
-}
-.footer-contacto:hover
-{
+    }
+    & &__footer-recetas {
+    &:hover {
     transform: translateY(-5px) scale(1.05);
-}
-.footer-recetas:hover
-{
-    transform: translateY(-5px) scale(1.05);
-}
-
+    }
+    }
 }
 

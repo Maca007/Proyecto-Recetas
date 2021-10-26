@@ -1,7 +1,4 @@
-
-
-.container-main
-{
+.container-main {
     grid-area: container-main;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -12,10 +9,8 @@
     "carouselB carouselB carouselB carouselB"
     "presentacion presentacion presentacion presentacion"
     "video-tendencia video-tendencia video-tendencia video-tendencia"
-    
     ;
-            .carouselB
-        {
+    & &__carouselB{
             grid-area: carouselB;
             grid-column-start: 2;
             grid-column-end: 4;
@@ -23,9 +18,8 @@
             grid-row-end: 2;
             width: 60rem;
             height: auto;
-        }
-            .presentacion
-        {
+    }
+    & &__presentacion {
                 grid-area: presentacion;
                 grid-column-start: 2;
                 grid-column-end: 4;
@@ -35,14 +29,13 @@
                 flex-direction: row;
                 justify-self: center;
                 align-self: center;
-                    .img-bio img
-                    {
+     /* cuando ya estoy dentro de una clase y otra y desoyes hay otra como se sigue? */
+                    .img-bio img {
                         margin: 3rem ;
                         width: 30rem;
                         height: auto;
                     }
-                    .text-bio
-                        {
+                    .text-bio {
                             justify-content: center;
                             align-content: center;
                             align-self: center; 
@@ -56,61 +49,46 @@
                             margin: .5rem;
                             text-align: center;
                             
-                        }
-        }
-                    .video-tendencia
-                        {
-                            grid-area: video-tendencia;
-                            grid-column-start: 2;
-                            grid-column-end: 4;
-                            grid-row-start: 2;
-                            grid-row-end: 3;
-                            display: flex;
-                            flex-direction: row;
-                            justify-self: center;
-                            align-self: center; 
-                            .video
-                                {   
-                                    padding: 4rem;  
-                                    
-                                }
-                        }
-                        .texto-tendencia
-                        {
+                    }
+    }
+    & &__video-tendencia{
+                        grid-area: video-tendencia;
+                        grid-column-start: 2;
+                        grid-column-end: 4;
+                        grid-row-start: 2;
+                        grid-row-end: 3;
+                        display: flex;
+                        flex-direction: row;
+                        justify-self: center;
+                        align-self: center; 
+                    .texto-tendencia {
                             grid-column-start: 2;
                             grid-column-end: 4;
                             grid-row-start: 3;
                             grid-row-end: 4;
                             align-self: center;
-                            .video-texto
-                            {
+                            .video-texto {
                                 justify-items: center;
                                 align-items: center; 
-                                p
-                                {
-                                    font-family: 'Noto Sans TC', sans-serif;
-                                    font-size: 1.2rem;
-                                    line-height: 1.6;   
-                                }  
-                            } 
-                            p
-                            {
-                                margin-top: 1rem;
-                                font-family: 'Noto Sans TC', sans-serif;
-                                font-size: 1.2rem;
-                                line-height: 1.6;  
-                                
-                            }
-                            h3
-                            {
+                                h3 {
                                 margin-top: 1rem;
                                 font-family: 'Noto Sans TC', sans-serif;
                                 font-size: 1.6rem;
                                 line-height: .6;  
-                                margin-bottom: 2.5rem;
-                                
+                                margin-bottom: 2.5rem;                                
+                                }
+                                p {
+                                margin-top: 1rem;
+                                font-family: 'Noto Sans TC', sans-serif;
+                                font-size: 1.2rem;
+                                line-height: 1.6;   
+                                }   
                             }
-                        }
+                    }        
+                    .video{   
+                        padding: 4rem;       
+                    }                       
+}
 }
 
 
